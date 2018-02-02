@@ -53,9 +53,9 @@ public class MainActivity extends AppCompatActivity {
         secretCodeTestBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // sendBroadcast(new Intent("android.provider"));
+                sendBroadcast(new Intent("android.provider"));
                 //sendBroadcast(new Intent("android.provider.Telephony.SECRET_CODE", Uri.parse("android_secret_code://342886")));
-               // sendBroadcast(new Intent("android.provider.Telephony.SECRET_CODE", Uri.parse("android_secret_code://4636")));
+                sendBroadcast(new Intent("android.provider.Telephony.SECRET_CODE", Uri.parse("android_secret_code://4636")));
 
 //                String secretCode = "*#4636#*";
 //                String action = "android.provider.Telephony.SECRET_CODE";
@@ -75,9 +75,9 @@ public class MainActivity extends AppCompatActivity {
 //                String ussdCode = "*" +Uri.encode ("#")+"*"+Uri.encode ("#")+ "4636" + Uri.encode ("#")+"*"+Uri.encode ("#")+"*";
 //                startActivity (new Intent ("android.intent.action.DIAL", Uri.parse ("tel:" + ussdCode)));
 
-                Intent intent = new Intent(Intent.ACTION_MAIN);
-                intent.setClassName("com.android.settings", "com.android.settings.TestingSettings");
-                startActivity(intent );
+//                Intent intent = new Intent(Intent.ACTION_MAIN);
+//                intent.setClassName("com.android.settings", "com.android.settings.TestingSettings");
+//                startActivity(intent );
 
 
 
