@@ -5,6 +5,8 @@
 <!-- Adds the permissions needed to run the dialer -->
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.*" />
+
 
 
 
@@ -19,9 +21,13 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+                <!--<action android:name="android.provider.Telephony.SECRET_CODE" />-->
+                <!--<data android:scheme="android_secret_code"/>-->
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>
